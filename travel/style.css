@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #C7923E;
+    --text: #11142D;
+    --grey-text: #515151;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    font-family: 'Mulish', sans-serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.front {
+    background-image: linear-gradient(90deg, white 55%, #909090 45%);
+    height: 900px;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.navigation {
+    display: flex;
+    padding: 30px 0;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navigation .logo {
+    width: 200px;
+}
+
+.navigation nav {
+    width: 500px;
+}
+
+.navigation nav ul {
+    display: flex;
+}
+
+.navigation nav li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 24px;
+    gap: 10px;
+
+    width: 159px;
+    height: 40px;
+
+    /* Light/Secondary Color/50% */
+    background: #C7923E;
+    border-radius: 8px;
+}
+
+.btn a {
+    color: white;
+}
+
+.search {
+    width: 450px;
+    display: flex;
+    justify-content: end;
+    padding: 0 40px;
+}
+
+.search i {
+    color: white;
+}
+
+.hero {
+    margin-top: 150px;
+    width: 600px;
+}
+
+.hero .topic {
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 120%;
+    letter-spacing: 0.003em;
+    color: var(--text);
+}
+
+.hero p {
+    margin: 5px 0;
+}
+
+.explore {
+    display: flex;
+    margin: 64px 0;
+    width: 900px;
+    height: 90px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 9px;
+    background-color: #fff;
+}
+
+.data {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--text);
+}
+
+.expand-btn {
+    width: 159px;
+    height: 56px;
+}
+
+.partner {
+    margin-top: 130px;
+}
+
+.slider img {
+    width: 670px;
+    object-fit: contain;
+}
+
+.about-us {
+    padding: 100px 0;
+}
+
+.about-1 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 650px;
+    gap: 120px;
+}
+
+.about-1 img {
+    width: 650px;
+    background: #919191;
+}
+
+.about-img {
+    width: 500px;
+}
+
+.about-img h1 {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 120%;
+    /* or 47px */
+    letter-spacing: 0.005em;
+
+    /* Light/Text Color/Title */
+    color: #11142D;
+
+}
+
+.about-img p {
+    width: 500px;
+    margin: 30px 0 70px 0;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: 0.005em;
+    color: #515151;
+
+}
+
+/* this is for informations-box */
+
+.informations-box {
+    width: 1232px;
+    height: 280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 80px auto;
+
+}
+
+.informations-box .box {
+    width: 400px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.informations-box .icon {
+    width: 90px;
+    height: 90px;
+    background: #9A9AB0;
+}
+
+.informations-box .name {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.003em;
+    color: #9A9AB0;
+}
+
+.informations-box .data {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #000000;
+}
+
+.room-suites-box {
+    width: 1650px;
+    height: 730px;
+    position: relative;
+
+}
+
+.room-suites-box .head {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.room-suites-box h1 {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+    color: #11142D;
+}
+
+.room-suites-box .head {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: 0.005em;
+    color: #515151;
+
+}
+
+.room-suites-box .slide-changer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    left: 1208px;;
+}
+
+.slide-changer .back {
+    width: 56px;
+    height: 56px;
+    font-size: xx-large;
+    border: 3px solid var(--primary);
+    border-radius: 8px;
+}
+.slide-changer .forward {
+    width: 56px;
+    height: 56px;
+    font-size: xx-large;
+    background-color: var(--primary);
+    border-radius: 8px;
+}
