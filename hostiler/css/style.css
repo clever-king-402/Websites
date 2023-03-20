@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn {
+  background-color: #f1a53e;
+  color: white;
+  font-size: 20px;
+}
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+/* NAVIGATION */
+header {
+  display: flex;
+  flex-direction: row;
+}
+header .logo {
+  font-size: 20px;
+  color: white;
+  background-color: #101728;
+  padding: 20px;
+  display: grid;
+  place-items: center;
+}
+header .top {
+  width: 100%;
+}
+header .top .email-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .top .email-icons .email-contact {
+  display: flex;
+  gap: 20px;
+  padding: 10px 40px;
+  font-size: 20px;
+}
+header .top .email-icons .email-contact i {
+  color: #f1a53e;
+}
+header .top .email-icons .icons i {
+  padding: 10px;
+  color: #f1a53e;
+}
+header .top .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #101728;
+}
+header .top .navigation nav ul {
+  display: flex;
+}
+header .top .navigation nav ul li {
+  list-style: none;
+  padding: 40px 20px;
+}
+header .top .navigation .btn-premium {
+  padding: 40px 50px;
+}
+
+/* SLIDER */
+.slider {
+  height: 800px;
+  background-color: grey;
+}
+
+/* ABOUT */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about .about-contents {
+  padding-top: 100px;
+  flex-basis: 50%;
+}
+.about .about-contents .title {
+  color: #f1a53e;
+  font-size: 25px;
+  font-weight: 900;
+}
+.about .about-contents .topic {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 90px;
+}
+.about .about-contents .topic span {
+  color: #f1a53e;
+}
+.about .about-contents p {
+  font-size: 18px;
+  padding: 10px 0;
+}
+.about .about-contents .counter {
+  display: flex;
+  gap: 50px;
+  padding: 30px 0;
+}
+.about .about-contents .counter .count {
+  padding: 25px 50px;
+  border: 1px solid rgb(199, 196, 196);
+  outline: 1px solid rgb(199, 196, 196);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  outline-offset: 5px;
+}
+.about .about-contents .counter .count i {
+  color: #f1a53e;
+  font-size: 40px;
+}
+.about .about-contents .counter .count .data {
+  font-size: 35px;
+  font-weight: 800;
+  padding: 10px;
+}
+.about .about-contents .btn-about {
+  margin-top: 20px;
+  width: 230px;
+  padding: 25px;
+}/*# sourceMappingURL=style.css.map */

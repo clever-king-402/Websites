@@ -1,0 +1,20 @@
+$theme1 : #101728;
+$theme2 : #f1a53e;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.btn{
+    background-color: $theme2;
+    color: white;
+    font-size: 20px;
+}
