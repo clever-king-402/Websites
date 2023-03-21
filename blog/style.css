@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color : #6246EA;
+}
+
+.navbar-brand{
+    color: var(--color);
+}
+.navbar-brand span{
+    font-size: 2rem;
+    color: black;
+}
+
+/* here is the hero part */
+
+.hero{
+    padding-top:100px ;
+}
+
+/* this is browseing category part */
+
+/* .browse-category .browse-slide{
+    text-align: right;
+} */
+
+
+.input-field{
+    border-radius: 8px;
+    padding: 21px 200px 21px 25px;
+    width: 444px;
+    height: 67px;
+}
+.btn{
+    background: #6246EA;
+     border-radius: 8px;
+        font-style: normal;
+        padding: 20px;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 25px;
+            text-transform: capitalize;
+            color: white;
+            margin-left: 20px;
+}
+
+.subscribe .container{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe h1{
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.subscribe .image{
+    border-radius: 50%;
+    background-color: #ccc;
+    padding:10px 20px;
+}

@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- this is the navigation part -->
+    <header class="container">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><span>Dasteen</span>.Blog</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Category</a>
+              <a class="nav-link" href="#">About Me</a>
+              <a class="nav-link disabled">Disabled</a>
+            </div>
+          </div>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <!-- navigation ends here -->
+
+    <!-- this is the hero part -->
+    <section class="hero container flex">
+      <div class="row gap-5">
+        <div class="hero-contents col-lg-6">
+          <h1>Hi, i’m Dasteen Front end dev</h1>
+          <p>
+            On this blog I share tips and tricks, frameworks, projects,
+            tutorials, etc Make sure you subscribe to get the latest updates
+          </p>
+          <form class="row g-3">
+            <div class="col-auto">
+              <label for="staticEmail2" class="visually-hidden">Email</label>
+              <input
+                type="text"
+                readonly
+                class="form-control-plaintext"
+                id="staticEmail2"
+                value="email@example.com"
+              />
+            </div>
+            <div class="col-auto">
+              <label for="inputPassword2" class="visually-hidden"
+                >Password</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="inputPassword2"
+                placeholder="Password"
+                class="input-field"
+              />
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-primary mb-3">
+                Confirm identity
+              </button>
+            </div>
+          </form>
+        </div>
+        <div
+          class="hero-image col-lg-5 align-items-center justify-content-center px-5"
+        >
+          <img src="images/learn-coding 1.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- hero ends hero -->
+
+    <!-- here is the browse category part -->
+    <section class="browse-category">
+      <div class="container">
+        <div class="browse-heading row">
+          <h4 class="heading col-6">Browse the category</h4>
+          <h4 class="slide col-6 text-end">
+            see all category <i class="fa-solid fa-arrow-right"></i>
+          </h4>
+        </div>
+        <div class="categories">
+          <div class="row">
+            <div class="col">
+              <div class="card" style="width: 14rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 14rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 14rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 14rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 14rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- browse category end here -->
+
+    <!-- blog post start here -->
+    <section class="blog-posts">
+      <div class="container">
+        <!-- articles start here  -->
+        <div class="featured-articles">
+          <div class="articles-heading row">
+            <h4 class="heading col-6">featured Articles</h4>
+            <h4 class="slide col-6 text-end">
+              See All Articles <i class="fa-solid fa-arrow-right"></i>
+            </h4>
+          </div>
+           <div class="row g-4">
+          <div class="col-3">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!-- articles end here  -->
+       
+
+        <!-- css featured here  -->
+        <div class="featured-css">
+          <div class="css-heading row">
+            <h4 class="heading col-6">CSS</h4>
+            <h4 class="slide col-6 text-end">
+              See All Articles <i class="fa-solid fa-arrow-right"></i>
+            </h4>
+          </div>
+           <div class="row g-4">
+          <div class="col-3">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!-- css feature ends here  -->
+
+        <!-- javascript featured here  -->
+        <div class="featured-javascript">
+          <div class="css-heading row">
+            <h4 class="heading col-6">javascript</h4>
+            <h4 class="slide col-6 text-end">
+              See All Articles <i class="fa-solid fa-arrow-right"></i>
+            </h4>
+          </div>
+           <div class="row g-4">
+          <div class="col-3">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!-- javascript feature ends here  -->
+
+        <!-- reactjs featured here  -->
+        <div class="featured-reactjs">
+          <div class="reactjs-heading row">
+            <h4 class="heading col-6">Reactjs</h4>
+            <h4 class="slide col-6 text-end">
+              See All Articles <i class="fa-solid fa-arrow-right"></i>
+            </h4>
+          </div>
+           <div class="row g-4">
+          <div class="col-3">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!-- reactjs feature ends here  -->
+
+        <div class="btn btn-primary">
+            More articles
+        </div>
+      </div>
+    </section>
+
+<!-- subscribe section start  -->
+
+<section class="subscribe">
+    <div class="container">
+        <div class="image"><img src="./images/image 2.png" alt=""/></div>
+        <h1>Subscribe For the lastest updates</h1>
+        <p>Subscribe to newsletter and never miss the new post every week.</p>
+        <form action="">
+            <input type="text" name="" id="" class="input-field" />
+            <div  class="btn">Subscribe</div>
+        </form>
+    </div>
+</section>
+
+<!-- subscribe section end  -->
+
+
+    <!-- footer  -->
+    <!-- Footer -->
+<footer class="text-center text-lg-start bg-white text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3 text-secondary"></i>Company name
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Vue</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Laravel</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3 text-secondary"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
