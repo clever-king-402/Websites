@@ -1,0 +1,399 @@
+@import 'initial';
+
+
+// this is navigation section
+header {
+    i {
+        color: $theme;
+    }
+
+    .information-bar {
+        @include flex(row, center, space-between);
+        background-color: $background;
+        padding: 0.5% 0% 0.5% 0%;
+        color: white;
+
+        .info {
+            display: flex;
+            gap: 0 20px;
+        }
+    }
+
+    .navigation-section {
+        @include flex(row, center, space-between);
+        border-style: solid;
+        border-width: 1px 0px 0px 0px;
+        border-color: #000012;
+        box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, .1);
+        padding: 10px 0px 6px 2px;
+        background: url("https://nationalinfotechcollege.edu.np/wp-content/uploads/2022/07/NI-scaled-1-1.jpg");
+
+        .logo {
+
+            img {
+                width: 200px;
+            }
+        }
+
+        nav {
+            ul {
+                display: flex;
+
+                li {
+                    list-style-type: none;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    padding-top: 14px;
+                    padding-bottom: 14px;
+
+                    a {
+                        font-size: 1rem;
+                        font-weight: 500;
+                        color: $background;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//this is hero section 
+.hero {
+    background: url("https://nationalinfotechcollege.edu.np/wp-content/uploads/2022/07/NI-scaled-1-1.jpg");
+    background-size: cover;
+    background-position-y: -300px;
+    padding: 110px 0;
+
+    .hero-contents {
+        flex-basis: 60%;
+
+        h1 {
+            font-size: 42px;
+            font-weight: 700;
+            color: $background;
+        }
+
+        p {
+            margin: 20px 0;
+            padding-right: 30px;
+        }
+
+        .btn-group {
+            @include flex(row, none, none);
+            gap: 10px;
+            padding: 20px;
+
+            .btn {
+                background-color: $background;
+                border-left: 15px solid $theme;
+                color: $theme;
+            }
+        }
+    }
+}
+
+//this is entrance brochure 
+.entrance-brochure {
+    padding: 8% 0% 3% 0%;
+
+    .container {
+        border-radius: 20px;
+        background-color: #f4f4f3;
+
+        .set {
+            padding: 50px;
+
+            h1 {
+                font-size: 1.75rem;
+
+                span {
+                    color: $theme;
+                }
+            }
+
+            p {
+                margin: 30px 0 50px 0;
+                color: $gray;
+            }
+        }
+
+        .brochure {
+            background-color: $background;
+            border-radius: 20px;
+            padding: 40px;
+            width: 75%;
+            @include flex(column, center, center);
+            gap: 15px;
+            color: white;
+            text-align: center;
+            margin: -5% 0 3% 0;
+
+            h1 {
+                font-size: 1.75rem;
+                color: white;
+
+                span {
+                    color: $theme;
+                }
+            }
+
+            a {
+                color: white;
+            }
+        }
+    }
+}
+
+// this is about  section
+.about {
+    .container {
+        gap: 50px;
+
+        .image {
+            flex-basis: 50%;
+
+            img {
+                width: 100%;
+                height: 600px;
+            }
+        }
+
+        .about-info {
+
+            flex-basis: 50%;
+            padding-right: 30px;
+
+            h1 {
+                color: $background;
+                font-size: 35px;
+                font-weight: 600;
+
+                span {
+                    color: $theme;
+                }
+            }
+
+            p {
+                margin: 20px 0;
+            }
+
+            details {
+                background-color: $background;
+                padding: 15px;
+                margin: 10px 0;
+                border-radius: 3px;
+
+                color: white;
+                cursor: pointer;
+
+                summary {
+                    display: flex;
+                    gap: 30px;
+                    align-items: center;
+                    justify-content: center;
+
+                    .name {
+                        font-size: 1rem;
+                        font-weight: 600;
+                        line-height: 1;
+                        flex-grow: 2;
+                    }
+
+                    .arrow {
+                        margin-right: 20px;
+                    }
+
+                    i {
+                        color: $theme;
+                    }
+                }
+
+                summary::-webkit-details-marker {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+// this is discovery section
+.discovery {
+    padding: 4% 0;
+
+    .discovery-info {
+        .container {
+            display: block;
+            text-align: center;
+            color: #003566;
+
+            h1 {
+                font-family: "Poppins", Sans-serif;
+                font-size: 35px;
+                font-weight: 600;
+
+                span {
+                    color: $theme;
+                }
+            }
+
+            p {
+                margin: 20px 0;
+            }
+
+        }
+    }
+
+    .discover-list {
+        display: flex;
+        gap: 50px;
+        padding: 50px 0;
+
+        .card {
+            border-radius: 1rem;
+            background-color: rgb(248, 246, 246);
+            @include flex(column, none, none);
+            gap: 20px;
+            padding: 20px 20px 30px 30px;
+
+            .logo {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                img {
+                    width: 37px;
+                    height: 37px;
+                }
+
+            }
+
+            .card-content {
+                h1 {
+                    margin-bottom: 20px;
+                }
+
+
+            }
+
+            .card-bottom {
+                font-family: "Poppins", Sans-serif;
+                font-size: 15px;
+                font-weight: 600;
+
+                i {
+                    color: $theme;
+                    padding-right: 10px;
+                }
+            }
+        }
+
+        .more {
+            padding-right: 50px;
+
+            h1 {
+                color: #003566;
+                font-family: "Poppins", Sans-serif;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 1.2em;
+            }
+
+            h3 {
+                margin: 20px 0;
+
+                span {
+                    color: $theme;
+                }
+            }
+
+            .btn-circle {
+                display: flex;
+                margin-top: 20px;
+
+                i {
+
+                    background-color: $background;
+                    border-style: solid;
+                    border-width: 0.5px 0.5px 0.5px 0.5px;
+                    border-color: #D8D8D84A;
+                    border-radius: 50%;
+                    box-shadow: 0px 12px 40px 12px rgba(135.84229505787724, 140.51153461622158, 149.85001373291016, 0.13);
+                    padding: 30px 25px;
+                    color: white;
+                    font-weight: 800;
+                }
+            }
+
+        }
+    }
+}
+
+// this is features section 
+
+.features {
+    .container {
+        display: block;
+
+        .features-navigations {
+            display: flex;
+
+            .feature-nav {
+                width: 100%;
+                font-weight: 600;
+                padding: 15px 15px 15px 15px;
+                margin: 0px 0px 0px 0px;
+                background-color: $background;
+                margin-left: 2px;
+                color: white;
+                text-align: center;
+            }
+        }
+
+        .features-contents {
+            margin: 30px 0;
+            border: 1px solid rgb(237, 237, 237);
+            display: flex;
+            // justify-content: space-between;
+            gap: 50px;
+            .content-1 {
+                
+                padding: 40px;
+                h1 {
+                    padding: 10px;
+                    color: $background;
+                    font-family: "Poppins",
+                        Sans-serif;
+                    font-weight: 600;
+                }
+                .image{
+                    img{
+                        width: 100%;
+                            height: 275px;
+                            object-fit: cover;
+                            border-radius: 3px 3px 3px 3px;
+                            box-shadow: -5px 5px 5px 5px $theme;
+                    }
+                    padding: 20px 0;
+                }
+
+            }
+            .content-2{
+                flex-basis: 700px;
+                    // flex-grow: 1;
+                width: 100%;
+                        padding: 15px 30px 40px 30px;
+                        background-color: $background;
+                        color: white;
+                        .info{
+                            h1{
+                                padding: 20px 0 30px 0;
+                                span{
+                                    color: $theme;
+                                }
+                            }
+                        }
+            }
+        }
+    }
+
+}
