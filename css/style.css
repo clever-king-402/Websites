@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  font-weight: 600;
+  text-transform: capitalize;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #FFB800;
+  background-color: #FFB800;
+  border-radius: 0px 0px 0px 0px;
+  padding: 10px 20px;
+}
+
+header i {
+  color: #FFB800;
+}
+header .information-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #003566;
+  padding: 0.5% 0% 0.5% 0%;
+  color: white;
+}
+header .information-bar .info {
+  display: flex;
+  gap: 0 20px;
+}
+header .navigation-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-style: solid;
+  border-width: 1px 0px 0px 0px;
+  border-color: #000012;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
+  padding: 10px 0px 6px 2px;
+  background: url("https://nationalinfotechcollege.edu.np/wp-content/uploads/2022/07/NI-scaled-1-1.jpg");
+}
+header .navigation-section .logo img {
+  width: 200px;
+}
+header .navigation-section nav ul {
+  display: flex;
+}
+header .navigation-section nav ul li {
+  list-style-type: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+header .navigation-section nav ul li a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #003566;
+}
+
+.hero {
+  background: url("https://nationalinfotechcollege.edu.np/wp-content/uploads/2022/07/NI-scaled-1-1.jpg");
+  background-size: cover;
+  background-position-y: -300px;
+  padding: 110px 0;
+}
+.hero .hero-contents {
+  flex-basis: 60%;
+}
+.hero .hero-contents h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #003566;
+}
+.hero .hero-contents p {
+  margin: 20px 0;
+  padding-right: 30px;
+}
+.hero .hero-contents .btn-group {
+  display: flex;
+  flex-direction: row;
+  align-items: none;
+  justify-content: none;
+  gap: 10px;
+  padding: 20px;
+}
+.hero .hero-contents .btn-group .btn {
+  background-color: #003566;
+  border-left: 15px solid #FFB800;
+  color: #FFB800;
+}
+
+.entrance-brochure {
+  padding: 8% 0% 3% 0%;
+}
+.entrance-brochure .container {
+  border-radius: 20px;
+  background-color: #f4f4f3;
+}
+.entrance-brochure .container .set {
+  padding: 50px;
+}
+.entrance-brochure .container .set h1 {
+  font-size: 1.75rem;
+}
+.entrance-brochure .container .set h1 span {
+  color: #FFB800;
+}
+.entrance-brochure .container .set p {
+  margin: 30px 0 50px 0;
+  color: #7A7A7A;
+}
+.entrance-brochure .container .brochure {
+  background-color: #003566;
+  border-radius: 20px;
+  padding: 40px;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  color: white;
+  text-align: center;
+  margin: -5% 0 3% 0;
+}
+.entrance-brochure .container .brochure h1 {
+  font-size: 1.75rem;
+  color: white;
+}
+.entrance-brochure .container .brochure h1 span {
+  color: #FFB800;
+}
+.entrance-brochure .container .brochure a {
+  color: white;
+}
+
+.about .container {
+  gap: 50px;
+}
+.about .container .image {
+  flex-basis: 50%;
+}
+.about .container .image img {
+  width: 100%;
+  height: 600px;
+}
+.about .container .about-info {
+  flex-basis: 50%;
+  padding-right: 30px;
+}
+.about .container .about-info h1 {
+  color: #003566;
+  font-size: 35px;
+  font-weight: 600;
+}
+.about .container .about-info h1 span {
+  color: #FFB800;
+}
+.about .container .about-info p {
+  margin: 20px 0;
+}
+.about .container .about-info details {
+  background-color: #003566;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+}
+.about .container .about-info details summary {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.about .container .about-info details summary .name {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1;
+  flex-grow: 2;
+}
+.about .container .about-info details summary .arrow {
+  margin-right: 20px;
+}
+.about .container .about-info details summary i {
+  color: #FFB800;
+}
+.about .container .about-info details summary::-webkit-details-marker {
+  display: none;
+}
+
+.discovery {
+  padding: 4% 0;
+}
+.discovery .discovery-info .container {
+  display: block;
+  text-align: center;
+  color: #003566;
+}
+.discovery .discovery-info .container h1 {
+  font-family: "Poppins", Sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+}
+.discovery .discovery-info .container h1 span {
+  color: #FFB800;
+}
+.discovery .discovery-info .container p {
+  margin: 20px 0;
+}
+.discovery .discover-list {
+  display: flex;
+  gap: 50px;
+  padding: 50px 0;
+}
+.discovery .discover-list .card {
+  border-radius: 1rem;
+  background-color: rgb(248, 246, 246);
+  display: flex;
+  flex-direction: column;
+  align-items: none;
+  justify-content: none;
+  gap: 20px;
+  padding: 20px 20px 30px 30px;
+}
+.discovery .discover-list .card .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.discovery .discover-list .card .logo img {
+  width: 37px;
+  height: 37px;
+}
+.discovery .discover-list .card .card-content h1 {
+  margin-bottom: 20px;
+}
+.discovery .discover-list .card .card-bottom {
+  font-family: "Poppins", Sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+.discovery .discover-list .card .card-bottom i {
+  color: #FFB800;
+  padding-right: 10px;
+}
+.discovery .discover-list .more {
+  padding-right: 50px;
+}
+.discovery .discover-list .more h1 {
+  color: #003566;
+  font-family: "Poppins", Sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2em;
+}
+.discovery .discover-list .more h3 {
+  margin: 20px 0;
+}
+.discovery .discover-list .more h3 span {
+  color: #FFB800;
+}
+.discovery .discover-list .more .btn-circle {
+  display: flex;
+  margin-top: 20px;
+}
+.discovery .discover-list .more .btn-circle i {
+  background-color: #003566;
+  border-style: solid;
+  border-width: 0.5px 0.5px 0.5px 0.5px;
+  border-color: rgba(216, 216, 216, 0.2901960784);
+  border-radius: 50%;
+  box-shadow: 0px 12px 40px 12px rgba(136, 141, 150, 0.13);
+  padding: 30px 25px;
+  color: white;
+  font-weight: 800;
+}
+
+.features .container {
+  display: block;
+}
+.features .container .features-navigations {
+  display: flex;
+}
+.features .container .features-navigations .feature-nav {
+  width: 100%;
+  font-weight: 600;
+  padding: 15px 15px 15px 15px;
+  margin: 0px 0px 0px 0px;
+  background-color: #003566;
+  margin-left: 2px;
+  color: white;
+  text-align: center;
+}
+.features .container .features-contents {
+  margin: 30px 0;
+  border: 1px solid rgb(237, 237, 237);
+  display: flex;
+  gap: 50px;
+}
+.features .container .features-contents .content-1 {
+  padding: 40px;
+}
+.features .container .features-contents .content-1 h1 {
+  padding: 10px;
+  color: #003566;
+  font-family: "Poppins", Sans-serif;
+  font-weight: 600;
+}
+.features .container .features-contents .content-1 .image {
+  padding: 20px 0;
+}
+.features .container .features-contents .content-1 .image img {
+  width: 100%;
+  height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 3px 3px 3px 3px;
+  box-shadow: -5px 5px 5px 5px #FFB800;
+}
+.features .container .features-contents .content-2 {
+  flex-basis: 700px;
+  width: 100%;
+  padding: 15px 30px 40px 30px;
+  background-color: #003566;
+  color: white;
+}
+.features .container .features-contents .content-2 .info h1 {
+  padding: 20px 0 30px 0;
+}
+.features .container .features-contents .content-2 .info h1 span {
+  color: #FFB800;
+}/*# sourceMappingURL=style.css.map */
