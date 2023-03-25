@@ -1,5 +1,5 @@
 @import 'initial';
-
+@import 'responsive';
 
 // this is navigation section
 header {
@@ -355,9 +355,11 @@ header {
             display: flex;
             // justify-content: space-between;
             gap: 50px;
+
             .content-1 {
-                
+
                 padding: 40px;
+
                 h1 {
                     padding: 10px;
                     color: $background;
@@ -365,35 +367,235 @@ header {
                         Sans-serif;
                     font-weight: 600;
                 }
-                .image{
-                    img{
+
+                .image {
+                    img {
                         width: 100%;
-                            height: 275px;
-                            object-fit: cover;
-                            border-radius: 3px 3px 3px 3px;
-                            box-shadow: -5px 5px 5px 5px $theme;
+                        height: 275px;
+                        object-fit: cover;
+                        border-radius: 3px 3px 3px 3px;
+                        box-shadow: -5px 5px 5px 5px $theme;
                     }
+
                     padding: 20px 0;
                 }
 
             }
-            .content-2{
+
+            .content-2 {
                 flex-basis: 700px;
-                    // flex-grow: 1;
+                // flex-grow: 1;
                 width: 100%;
-                        padding: 15px 30px 40px 30px;
-                        background-color: $background;
-                        color: white;
-                        .info{
-                            h1{
-                                padding: 20px 0 30px 0;
-                                span{
-                                    color: $theme;
-                                }
-                            }
+                padding: 15px 30px 40px 30px;
+                background-color: $background;
+                color: white;
+
+                .info {
+                    h1 {
+                        padding: 20px 0 30px 0;
+
+                        span {
+                            color: $theme;
                         }
+                    }
+                }
             }
         }
     }
 
+}
+
+// this is message section
+.message::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://nationalinfotechcollege.edu.np/wp-content/uploads/2022/06/bg-shape-1.png");
+    background-repeat: no-repeat;
+    opacity: .2;
+}
+
+.message {
+    padding: 70px 0;
+    position: relative;
+
+    .container {
+        align-items: stretch;
+    }
+
+    .message-content {
+        flex-basis: 50%;
+
+        h1 {
+            margin: -15px 0 15px 0;
+            font-size: 35px;
+            font-weight: 600;
+            color: $background;
+        }
+
+        .quotes {
+            padding: 20px 0;
+
+            i {
+                color: $theme;
+
+            }
+        }
+
+        p {
+            color: $gray;
+            line-height: 1.7rem;
+        }
+
+        .signature {
+            padding: 25px 0;
+
+            .name {
+                font-family: "Poppins", Sans-serif;
+                font-weight: 600;
+                font-size: 1.2rem;
+            }
+
+            .position {
+                font-family: "Poppins", Sans-serif;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .message-image {
+        flex-basis: 50%;
+        border-top: 10px solid $theme;
+        border-bottom: 10px solid $theme;
+        border-right: 10px solid $theme;
+        display: grid;
+        place-items: center;
+    }
+}
+
+//this is gallery section
+
+.gallery {
+
+    img {
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+
+// this is widget section 
+.widget {
+    .box {
+        width: 100%;
+        background-color: $theme;
+        display: flex;
+        padding: 20px 50px;
+        .partner {
+            flex-basis: 25%;
+            .heading {
+                font-family: "Poppins", Sans-serif;
+                font-size: 18px;
+                font-weight: 400;
+            }
+
+            img {
+                max-width: 170px;
+            }
+        }
+
+        form {
+            @include flex;
+            width: 100%;
+            input {
+                background-color: #ffffff;
+                border-color: #02010100;
+                border-width: 0px 0px 0px 0px;
+                border-radius: 20px 0px 0px 20px;
+                padding: 10px 20px;
+                min-height: 47px;
+                min-width: 80%;
+            }
+            input::placeholder{
+                color: $gray;
+                font-size: 1rem;
+                
+            }
+            button{
+                background-color: $background;
+                border:none;
+                border-radius: 0px 20px 20px 0px;
+                padding: 10px 60px;
+                min-height: 47px;
+                width: 100%;
+                color:white ;
+
+            }
+        }
+    }
+}
+
+// this is footer part
+footer{
+    margin: -4% 0;
+    .more-info{
+        padding: 100px 0 30px 0;
+        background-color: $background;
+        .container{
+            @include flex(row,start,none);
+        }
+        h3{
+            color: $theme;
+            padding-bottom: 10px;
+            font-weight: 500;
+        }
+        ul{
+            list-style-type: none;
+            li{
+                padding: 5px 0;
+            }
+            a{
+                color: white;
+                
+            }
+        }
+        .info{
+            width: 30%;
+            img{
+                max-width: 300px;
+                height: 105px;
+            }
+            p{
+                color: #FFFFFF;
+                    font-family: "Poppins", Sans-serif;
+                    font-size: 14px;
+                    font-weight: 300;
+                    padding: 20px 0 40px 0;
+
+            }
+            .courses{
+                img{
+                height: auto;
+                    max-width: 60%;
+                }
+            }
+        }
+        i{
+            color: $theme;
+        }
+        iframe{
+            margin: 20px 0;
+        }
+    }
+
+    .bottom{
+        background-color: $theme;
+        padding: 5px 0;
+        color: $background;
+        font-size: .9rem;
+        font-weight: 600;
+    }
 }
