@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navigation{
+    padding: 40px 0;
+    border-bottom: 2px solid black;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navigation nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation nav ul{
+    display: flex;
+}
+
+.navigation nav li{
+    list-style: none;
+    padding: 15px 30px;
+    font-size: 20px;
+}
+
+.navigation nav a{
+    color: black;
+    text-decoration: none;
+}
